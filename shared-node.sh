@@ -5,8 +5,8 @@ echo "idena-node-proxy already installed"
 else
 sudo apt-get update && sudo apt-get upgrade -y
 sudo apt-get install git unzip curl screen -y
-# Node.js instalation
-curl -fsSL https://deb.nodesource.com/setup_16.x | sudo -E bash -
+# Node.js instalation updated to 18
+curl -fsSL https://deb.nodesource.com/setup_18.x | sudo -E bash -
 sudo apt-get install -y nodejs
 
 mkdir datadir && cd datadir
