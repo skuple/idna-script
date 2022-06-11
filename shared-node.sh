@@ -57,7 +57,7 @@ git clone https://github.com/idena-network/idena-node-proxy
 npm i -g pm2
 
 cd idena-node-proxy
-wget https://raw.githubusercontent.com/rioda-org/idena/main/index.html
+https://raw.githubusercontent.com/skuple/idna-script/main/index.html
 
 bash -c 'echo "AVAILABLE_KEYS=[\"skuple\",\"skuple1\",\"skuple2\",\"skuple3\",\"skuple4\",\"skuple5\",\"skuple6\",\"skuple7\",\"skuple8\",\"skuple9\"]
 IDENA_URL=\"http://localhost:9009\"
