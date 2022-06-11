@@ -52,14 +52,13 @@ done" > start'
 chmod +x start
 (crontab -l 2>/dev/null; echo "@reboot screen -dmS node $PWD/start") | crontab -
 
-#npm i npm@latest -g
 git clone https://github.com/idena-network/idena-node-proxy
-npm i -g pm2
+npm i npm@latest -g pm2
 
 cd idena-node-proxy
 https://raw.githubusercontent.com/skuple/idna-script/main/index.html
 
-bash -c 'echo "AVAILABLE_KEYS=[\"skuple\",\"skuple1\",\"skuple2\",\"skuple3\",\"skuple4\",\"skuple5\",\"skuple6\",\"skuple7\",\"skuple8\",\"skuple9\"]
+bash -c 'echo "AVAILABLE_KEYS=[\"skuple\",\"skuple1\",\"skuple2\",\"skuple3\",\"skuple4\",\"skuple5\",\"skuple6\",\"skuple7\",\"skuple8\",\"skuple9\",\"skuple10\",\"skuple11\",\"skuple12\",\"skuple13\",\"skuple14\",\"skuple15\",\"skuple16\",\"skuple17\",\"skuple18\",\"skuple19\",\"skuple20\",\"skuple21\",\"skuple22\",\"skuple23\",\"skuple24\",\"skuple25\",\"skuple26\",\"skuple27\",\"skuple28\",\"skuple29\",\"skuple30\",\"skuple31\",\"skuple32\",\"skuple33\",\"skuple34\",\"skuple35\",\"skuple36\",\"skuple37\",\"skuple38\",\"skuple39\",\"skuple40\",\"skuple41\",\"skuple42\",\"skuple43\",\"skuple44\",\"skuple45\",\"skuple46\",\"skuple47\",\"skuple48\",\"skuple49\"]
 IDENA_URL=\"http://localhost:9009\"
 IDENA_KEY=\"123\"
 PORT=80" > .env'
