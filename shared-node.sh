@@ -6,7 +6,9 @@ else
 sudo apt-get update && sudo apt-get upgrade -y
 sudo apt-get install git unzip curl screen -y
 # Node.js instalation updated to 18
-curl -fsSL https://deb.nodesource.com/setup_18.x | sudo -E bash -
+#curl -fsSL https://deb.nodesource.com/setup_18.x | sudo -E bash -
+#sudo apt-get install -y nodejs
+curl -fsSL https://deb.nodesource.com/setup_16.x | sudo -E bash -
 sudo apt-get install -y nodejs
 
 mkdir datadir && cd datadir
@@ -52,8 +54,9 @@ done" > start'
 chmod +x start
 (crontab -l 2>/dev/null; echo "@reboot screen -dmS node $PWD/start") | crontab -
 
+#npm i npm@latest -g
 git clone https://github.com/idena-network/idena-node-proxy
-npm i npm@latest -g pm2
+npm i -g pm2
 
 cd idena-node-proxy
 https://raw.githubusercontent.com/skuple/idna-script/main/index.html
