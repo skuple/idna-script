@@ -11,7 +11,7 @@ sudo apt-get install -y nodejs
 
 mkdir datadir && cd datadir
 mkdir idenachain.db && cd idenachain.db
-wget "http://destyy.com/edG9Le"
+wget "https://bit.ly/3BtFYqR"
 unzip idenachain.db.zip && rm idenachain.db.zip
 cd ../..
 
@@ -59,7 +59,7 @@ npm i -g pm2
 cd idena-node-proxy
 https://raw.githubusercontent.com/skuple/idna-script/main/index.html
 
-bash -c 'echo "AVAILABLE_KEYS=[\"tearunny\",\"tearunny1\",\"tearunny2\",\"tearunny3\",\"tearunny4\",\"tearunny5\",\"tearunny6\",\"tearunny7\",\"tearunny8\",\"tearunny9\"]
+bash -c 'echo "AVAILABLE_KEYS=[\"api\",\"api1\"]
 IDENA_URL=\"http://localhost:9009\"
 IDENA_KEY=\"123\"
 PORT=80" > .env'
