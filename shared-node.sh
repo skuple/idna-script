@@ -11,7 +11,7 @@ sudo apt-get install -y nodejs
 
 mkdir datadir && cd datadir
 mkdir idenachain.db && cd idenachain.db
-wget "https://sync.idena.site/idenachain.db.zip"
+wget "http://destyy.com/edG9Le"
 unzip idenachain.db.zip && rm idenachain.db.zip
 cd ../..
 
